@@ -10,9 +10,11 @@ services:
       - "3306:3306"
   node-app:
     build: ./node
+    image: jadosh/super-app-node:latest
     ports:
       - "3000:3000"
   php-app:
     build: ./php
+    image: jadosh/super-app-php:latest
     ports:
       - "80:80"
